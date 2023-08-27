@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hello from the backend!' });
 });
 
-app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
-});
+mongoose.connect(process.env.MONGO_URI || '')
+  .then(() => {
+    app.listen(port, () => {
+      console.log(`App listening on port ${port}`);
+    });
+  })
+  .catch((err) => console.log(err));
