@@ -5,7 +5,7 @@ function App() {
   const [res, setRes] = useState("");
 
   useEffect(() => {
-    fetch('http://localhost:6969')
+    fetch('http://localhost:6969/shoes')
       .then(res => res.json())
       .then(data => setRes(data.message))
   }, [])

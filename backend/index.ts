@@ -2,6 +2,7 @@ import express from 'express';
 import cors from "cors";
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import { shoesRouter } from './routes/shoes';
 
 dotenv.config();
 
@@ -10,10 +11,7 @@ const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json())
-
-app.get('/', (req, res) => {
-  res.json({ message: 'Hello from the backend!' });
-});
+app.use('/shoes', shoesRouter);
 
 mongoose.connect(process.env.MONGO_URI || '')
   .then(() => {
