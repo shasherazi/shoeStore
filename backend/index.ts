@@ -11,6 +11,10 @@ const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json())
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path} ${new Date().toLocaleTimeString('en-US', { hour12: false })}`);
+  next();
+});
 app.use('/shoes', shoesRouter);
 
 mongoose.connect(process.env.MONGO_URI || '')
