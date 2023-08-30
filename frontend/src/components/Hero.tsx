@@ -3,7 +3,7 @@ export const Hero = () => {
     <div className="hero flex gap-5 items-center h-[calc(100vh-69px)]">
       <div className="img flex-1 bg-[#33180010] h-full flex items-center">
         <img
-          src="https://www.church-footwear.com/content/dam/churchs_products/E/EEC/EEC329/9AF0F0AXO/EEC329_9AF0_F0AXO_F_000000_SLS.png"
+          src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/man_shoe/810870/side.png"
           className="min-w-0"
         />
       </div>
