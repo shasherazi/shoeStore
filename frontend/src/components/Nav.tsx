@@ -1,4 +1,9 @@
-import { AiOutlineHeart, AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai'
+import {
+  AiOutlineHeart,
+  AiOutlineSearch,
+  AiOutlineShoppingCart,
+  AiOutlineUser,
+} from "react-icons/ai";
 
 export const Nav = () => {
   return (
@@ -18,5 +23,5 @@ export const Nav = () => {
         <AiOutlineShoppingCart />
       </div>
     </div>
-  )
-}
+  );
+};
