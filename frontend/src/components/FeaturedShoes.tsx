@@ -7,7 +7,7 @@ export const FeaturedShoes = () => {
         Featured Categories
       </h1>
 
-      <div className="featured-shoes mt-10 flex justify-between">
+      <div className="featured-shoes mt-10 flex flex-wrap justify-center">
         <FeaturedShoe
           name="Oxford Shoes"
           img="https://d1fufvy4xao6k9.cloudfront.net/feed/img/man_shoe/140853/side.png"
