@@ -5,7 +5,7 @@ export const BestSellerShoes = () => {
     <div className="best-seller-shoes flex flex-col items-center mt-24 mb-10">
       <h1 className="text-4xl font-playfair text-[#331800]">Best Sellers</h1>
 
-      <div className="mt-10 grid w-full justify-items-center grid-cols-3 grid-rows-2 px-10 gap-5">
+      <div className="mt-10 grid w-full justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-10 gap-5">
         <BestSellerShoe
           name="Cole Haan Original Grand Wingtip Oxfords, Cognac"
           img="https://image.menswearhouse.com/is/image/TMW/MW40_40ZC_05_COLE_HAAN_COGNAC_IVORY_MAIN?$40GridDesktop$"
