@@ -1,6 +1,7 @@
 import "./App.css";
+import { BestSellerShoes } from "./components/BestSellerShoes";
 import { CompaniesBanner } from "./components/CompaniesBanner";
-import { FeaturedCategories } from "./components/FeaturedCategories";
+import { FeaturedShoes } from "./components/FeaturedShoes";
 import { Hero } from "./components/Hero";
 import { Nav } from "./components/Nav";
 
@@ -10,7 +11,8 @@ function App() {
       <Nav />
       <Hero />
       <CompaniesBanner />
-      <FeaturedCategories />
+      <FeaturedShoes />
+      <BestSellerShoes />
     </>
   );
 }
