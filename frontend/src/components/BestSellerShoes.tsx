@@ -5,7 +5,7 @@ export const BestSellerShoes = () => {
   const [bestSellerShoes, setBestSellerShoes] = useState([]);
 
   const fetchBestSellerShoes = async () => {
-    const res = await fetch("http://localhost:6969/shoes");
+    const res = await fetch("https://shoestore-backend-dtg2.onrender.com/shoes");
     const data = await res.json();
     const bestSellerShoes = data.map((shoe: any) => {
       return {
