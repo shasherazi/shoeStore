@@ -18,7 +18,7 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "build": "npx tsc",
+    "build": "npm ci && npx tsc",
     "start": "node dist/index.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
